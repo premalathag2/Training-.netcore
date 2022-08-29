@@ -1,0 +1,25 @@
+﻿@model CG_VAK_BooksWeb.Models.Category
+<div class="container">
+    <div class="col-md-6 mx-auto">
+        <div class="row">
+            <h2>Create Category</h2>
+        </div>
+        <div class="col-md-6 ">
+            <form method="POST">
+                <div class="form-group">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" disabled/>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OrderOfDisplay" class="form-label"></label>
+                    <input asp-for="OrderOfDisplay" class="form-control" disabled/>
+                    <span asp-validation-for="OrderOfDisplay" class="text-danger"></span>
+                </div>
+                <div></div>
+                <button type="submit" class="btn btn-primary">Delete</button>
+                <a class="btn btn-outline-secondary" asp-controller="Category" asp-action="Index">Back To List</a>
+            </form>
+        </div>
+    </div>
+</div>
